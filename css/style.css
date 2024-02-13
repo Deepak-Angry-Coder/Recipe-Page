@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap");
+
+*,
+p {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: "outfit", sans-serif;
+  background-color: var(--Eggshell);
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --DarkCharcoal: hsl(24, 5%, 18%);
+  --WengeBrown: hsl(30, 10%, 34%);
+  --RoseWhite: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --lightgrey: hsl(30, 18%, 87%);
+  --Nutmeg: hsl(14, 45%, 36%);
+  --DarkRaspberry: hsl(332, 51%, 32%);
+}
+
+@font-face {
+  font-family: "outfit-black";
+  src: url(../fonts/Outfit-Black.ttf);
+}
+
+@font-face {
+  font-family: "Outfit-Bold";
+  src: url(../fonts/Outfit-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Outfit-ExtraBold";
+  src: url(../fonts/Outfit-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: "Outfit-ExtraLight";
+  src: url(../fonts/Outfit-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: "Outfit-Light";
+  src: url(../fonts/Outfit-Light.ttf);
+}
+
+@font-face {
+  font-family: "Outfit-Medium";
+  src: url(../fonts/Outfit-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Outfit-Regular";
+  src: url(../fonts/Outfit-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Outfit-SemiBold";
+  src: url(../fonts/Outfit-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Outfit-Thin";
+  src: url(../fonts/Outfit-Thin.ttf);
+}
+
+@font-face {
+  font-family: "Outfit-Variable";
+  src: url(../fonts/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Young-Serif";
+  src: url(../fonts/YoungSerif-Regular.ttf);
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  max-width: 90%;
+}
+
+.main {
+  margin: 5rem 0 5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.img_sec {
+  width: 50%;
+  background-color: var(--White);
+  border-radius: 10px;
+}
+
+.recipe_Head {
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+img {
+  border-radius: 30px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 1.5rem;
+}
+
+.recipe_Head h1 {
+  font-size: 2.2rem;
+  font-family: "Young-serif";
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.recipe_Head .head_p {
+  font-family: "Outfit-Regular";
+  font-size: 15px;
+  margin-bottom: 2rem;
+}
+
+.Preparation {
+  background-color: var(--RoseWhite);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  color: var(--DarkRaspberry);
+  font-family: "Young-serif";
+  letter-spacing: 2px;
+  margin-bottom: 0.7rem;
+}
+
+.Preparation span {
+  padding: 1rem;
+}
+
+.Preparation p {
+  line-height: 2rem;
+  font-family: "outfit-Light";
+}
+
+.Ingredients {
+  margin-bottom: 1.6rem;
+}
+
+.Ingredients span {
+  padding: 0.5rem;
+}
+
+.Ingredients p {
+  line-height: 2rem;
+}
+
+.horizontal_line {
+  text-align: center;
+  opacity: 40%;
+  margin-bottom: 1.5rem;
+}
+
+.Instructions {
+  margin-bottom: 1.6rem;
+}
+
+.Instructions span {
+  margin-right: 0.5rem;
+  color: var(--DarkRaspberry);
+}
+
+.Instructions p {
+  margin-bottom: 1rem;
+  font-size: 15px;
+  font-family: "outfit-Regular";
+  margin-left: 0.4rem;
+}
+
+.Nutri {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: left;
+  margin: 1.2rem;
+}
+
+.Nutri p {
+  width: 50%;
+}
+
+.Nutri p:nth-child(2) {
+  color: var(--DarkRaspberry);
+  font-family: "Outfit-Bold";
+}
+
+.footer {
+  background-color: var(--lightgrey);
+  padding: 0.5rem;
+}
+
+.challenge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+}
+
+.challenge a {
+  text-decoration: underline;
+  color: var(--Nutmeg);
+}
+
+@media (max-width: 992px) {
+  .img_sec {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .img_sec {
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  .img_sec {
+    width: 90%;
+  }
+
+  .recipe_Head .head_p {
+    font-size: 12.5px;
+  }
+
+  .image {
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .Preparation span {
+    padding: 0.5rem;
+  }
+
+  .Preparation p {
+    line-height: 2rem;
+    font-family: "outfit-Light";
+    font-size: 15px;
+  }
+
+  h3 {
+    font-size: 17px;
+  }
+
+  .Ingredients span {
+    padding: 0.5rem;
+  }
+
+  .Ingredients p {
+    font-size: 14px;
+  }
+
+  .Instructions p {
+    font-size: 13px;
+  }
+
+  .Nutrition p {
+    font-size: 14px;
+  }
+
+  .challenge p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 435px) {
+  .recipe_Head h1 {
+    font-size: 1.5rem;
+  }
+}
